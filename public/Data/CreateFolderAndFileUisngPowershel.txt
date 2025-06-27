@@ -1,0 +1,34 @@
+#PowerShell version of the commands:
+
+
+# Go to src folder
+cd src
+
+# Create folders
+New-Item -ItemType Directory -Path components
+New-Item -ItemType Directory -Path pages
+New-Item -ItemType Directory -Path data
+
+# Create component files
+New-Item components/Navbar.jsx -ItemType File
+New-Item components/Footer.jsx -ItemType File
+New-Item components/SocialLinks.jsx -ItemType File
+New-Item components/SectionTitle.jsx -ItemType File
+New-Item components/ProjectCard.jsx -ItemType File
+New-Item components/ServiceCard.jsx -ItemType File
+New-Item components/TimelineItem.jsx -ItemType File
+
+# Create page files
+New-Item pages/Home.jsx -ItemType File
+New-Item pages/About.jsx -ItemType File
+New-Item pages/Services.jsx -ItemType File
+New-Item pages/Portfolio.jsx -ItemType File
+New-Item pages/Resume.jsx -ItemType File
+New-Item pages/Contact.jsx -ItemType File
+New-Item pages/NotFound.jsx -ItemType File
+
+# Create data files
+New-Item data/projects.js -ItemType File
+New-Item data/services.js -ItemType File
+New-Item data/resume.js -ItemType File
+New-Item data/socials.js -ItemType File
