@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -16,8 +16,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-md">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="w-full fixed top-0 left-0 z-50 bg-[#1e2125] backdrop-blur-lg shadow-md">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-indigo-600">
           InBio
