@@ -41,7 +41,7 @@ const Hero = () => {
 
           <div className="linksContainer  border border-gray-900 grid grid-cols-2 gap-10 shadow-[10px_10px_19px_#1c1e22,_-10px_-10px_19px_#262a2e] p-5 rounded-lg ">
             <div className=" flex flex-col gap-5">
-              <h1>FIND WITH ME</h1>
+              <h6>FIND WITH ME</h6>
               <div className=" grid grid-cols-3 gap-5">
                 <div className=" themeSquareIconBox">
                   <FaFacebook size={25}></FaFacebook>
@@ -55,7 +55,7 @@ const Hero = () => {
               </div>
             </div>
             <div className=" flex flex-col gap-5">
-              <h1>BEST SKILL ON</h1>
+              <h6>BEST SKILL ON</h6>
               <div className=" grid grid-cols-3 gap-5">
                 <div className=" themeSquareIconBox">
                   <FaFacebook size={25}></FaFacebook>
