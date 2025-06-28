@@ -1,21 +1,20 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import ExperienceSection from '../components/ExperienceSection ';
+
 import AboutMe from '../components/AboutMe';
-import EducationSection from '../components/EducationSection';
 import ResumeSection from '../components/ResumeSection';
-import EducationAndSkills from '../components/EducationAndSkills';
+import ContactWithMeSection from '../components/ContactWithMeSection';
+import MyProjects from '../components/MyProjects';
+import { Footer } from 'rsuite';
 
 const Home = () => {
     return (
         <div>
             <Hero></Hero>
-            <EducationSection></EducationSection>
             <ResumeSection></ResumeSection>
-            <EducationAndSkills></EducationAndSkills>
+            <MyProjects></MyProjects>
             <AboutMe></AboutMe>
-            <ExperienceSection></ExperienceSection>
+            <ContactWithMeSection></ContactWithMeSection>
         </div>
     );
 };

@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import EducationAndSkills from "./EducationAndSkills";
 
 const ResumeSection = () => {
+//   const tabs = [
+//     "Education",
+//     "Professional Skills",
+//     "Standard Feature1",
+//     "Standard Feature2",
+//   ];
   const tabs = [
     "Education",
-    "Professional Skills",
-    "Standard Feature",
-    "Standard Feature",
+    "Professional Skills"
+
   ];
-  const [activeTab, setActiveTab] = useState("Professional Skills");
+  const [activeTab, setActiveTab] = useState("Education");
 
   const designSkills = [
     { name: "Photoshop", value: 100 },
@@ -29,7 +34,7 @@ const ResumeSection = () => {
   const gradientBar = "bg-gradient-to-r from-purple-500 to-[#f9004d]";
 
   return (
-    <section className="bg-[#212428] text-white py-20 px-4 sm:px-6 lg:px-20">
+    <section className="bg-[#212428] text-white py-20 px-4 sm:px-6 lg:px-20 ">
       <h2 className="text-4xl font-bold text-center mb-12">
         My <span className="text-[#f9004d]">Resume</span>
       </h2>
@@ -54,7 +59,7 @@ const ResumeSection = () => {
 
       {/* Skills Content */}
       {activeTab === "Professional Skills" && (
-        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto ">
           {/* Design Skills */}
           <div>
             <h3 className="text-2xl font-semibold text-white mb-6">
@@ -100,17 +105,24 @@ const ResumeSection = () => {
       )}
 
       {activeTab === "Education" && (
+                    <div className="w-full max-w-7xl mx-auto ">
 
           <EducationAndSkills></EducationAndSkills>
+                    </div>
 
       )}
 
-      {/* Placeholder for other tabs */}
-      {activeTab !== "Professional Skills" && (
+      {/* Placeholder for other tabs
+      {activeTab === "Standard Feature1" && (
         <div className="text-center text-gray-400 mt-12">
           <p>🔧 This tab is under development.</p>
         </div>
       )}
+      {activeTab === "Standard Feature2" && (
+        <div className="text-center text-gray-400 mt-12">
+          <p>🔧 This tab is under development.</p>
+        </div>
+      )} */}
     </section>
   );
 };

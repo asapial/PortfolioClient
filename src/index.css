@@ -9,9 +9,10 @@
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   }
   .themeSquareIconBox {
-    @apply  w-20 h-20 flex justify-center items-center rounded-lg bg-[#212428] text-white border border-gray-900;
+    @apply  w-20 h-20 flex justify-center items-center rounded-lg bg-gradient-to-br from-[#1e2024] to-[#23272b]  text-white border border-gray-800;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   }
+
 
 
      /* --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;

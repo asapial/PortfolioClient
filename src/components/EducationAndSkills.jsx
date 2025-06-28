@@ -72,12 +72,8 @@ const Card = ({ title, subtitle, result, company, description }) => (
 
 const EducationAndSkills = () => {
   return (
-    <section className="py-20 bg-[#212428] text-white px-4 sm:px-6 lg:px-20">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          My <span className="text-[#f9004d]">Resume</span>
-        </h2>
-
+    <section className=" bg-[#212428] text-white">
+      <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 relative">
           {/* Vertical Line */}
           <div className="absolute hidden md:block top-12 bottom-0 left-1/2 w-1 bg-gradient-to-b from-[#f9004d] to-transparent z-0"></div>
