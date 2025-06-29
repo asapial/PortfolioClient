@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaFacebookF, FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -13,15 +14,21 @@ const Footer = () => {
 
         {/* Right: Social Links */}
         <div className="flex gap-4 justify-center">
-          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-[#f9004d] transition text-lg">
-            <FaFacebookF />
-          </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-[#f9004d] transition text-lg">
-            <FaGithub />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-[#f9004d] transition text-lg">
-            <FaLinkedinIn />
-          </a>
+<Link to={'https://www.facebook.com/asapial'}>
+                  <div className="themeSquareIconBox hover:scale-110 transition">
+                    <FaFacebook size={25} />
+                  </div>
+                </Link>
+                <Link to={'https://github.com/asapial'}>
+                  <div className="themeSquareIconBox hover:scale-110 transition">
+                    <FaGithub size={25} />
+                  </div>
+                </Link>
+                <Link to={'https://www.linkedin.com/in/abu-syeed-4a1b74370/'}>
+                  <div className="themeSquareIconBox hover:scale-110 transition">
+                    <FaLinkedin size={25} />
+                  </div>
+                </Link>
         </div>
       </div>
     </footer>
