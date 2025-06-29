@@ -21,7 +21,7 @@ const MyProjects = () => {
     <section className="bg-[#212428] text-white py-20 px-4 sm:px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold">My Portfolio</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold">My Projects</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

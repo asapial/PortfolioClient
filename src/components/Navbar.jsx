@@ -1,70 +1,67 @@
-// src/components/Navbar.jsx
-import { Link, NavLink } from "react-router";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // close mobile menu
+    }
+  };
+
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Resume", path: "/resume" },
-    { name: "Contact", path: "/contact" },
+    { name: "I Am", path: "home" },
+    { name: "Resume", path: "resume" },
+    { name: "Projects", path: "projects" },
+    { name: "About Me", path: "about" },
+    { name: "Contact", path: "contact" },
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-[#1e2125] backdrop-blur-lg shadow-md">
+    <header className="w-full fixed top-0 left-0 z-50 bg-[#1e2125] text-white">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-indigo-600">
-          InBio
-        </Link>
+          <img
+    src='/public/images/generated_text.png'
+
+    className=" w-30 md:w-40"
+  />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6">
           {navItems.map((item) => (
-            <NavLink
+            <button
               key={item.name}
-              to={item.path}
-              className={({ isActive }) =>
-                `text-sm font-medium transition hover:text-indigo-600 ${
-                  isActive ? "text-indigo-600" : "text-gray-700 dark:text-gray-300"
-                }`
-              }
+              onClick={() => scrollToSection(item.path)}
+              className="text-sm font-medium hover:text-[#f9004d] transition"
             >
               {item.name}
-            </NavLink>
+            </button>
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-700 dark:text-white text-2xl"
+          className="md:hidden text-2xl"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 px-6 py-4 shadow-lg">
+        <div className="md:hidden bg-[#1e2125] px-6 py-4">
           {navItems.map((item) => (
-            <NavLink
+            <button
               key={item.name}
-              to={item.path}
-              onClick={() => setIsOpen(false)}
-              className={({ isActive }) =>
-                `block py-2 text-sm font-medium transition hover:text-indigo-600 ${
-                  isActive ? "text-indigo-600" : "text-gray-700 dark:text-gray-300"
-                }`
-              }
+              onClick={() => scrollToSection(item.path)}
+              className="block py-2 text-sm font-medium text-white hover:text-[#f9004d]"
             >
               {item.name}
-            </NavLink>
+            </button>
           ))}
         </div>
       )}

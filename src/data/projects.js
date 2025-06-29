@@ -6,7 +6,7 @@ export const projects = [
     image: "https://i.ibb.co/YFb4nTXz/laptop.png",
     link: "/projects/plateful",
     live: "https://plateful-21a3d.web.app/",
-    github: "https://github.com/asapial/Plateful-Client",
+    github: "https://github.com/asapial/PlateFul-Client-Side",
     stack: "React, Firebase, Tailwind CSS",
     description:
       "PlateFul is a user-friendly recipe management application where users can explore a variety of dishes, save favorites, and view recipe details. The app emphasizes a visually rich and responsive design, ensuring smooth navigation across devices. Users can like recipes, see trending ones, and maintain a personalized recipe list. Admins can manage recipes and user interactions.",
@@ -31,20 +31,20 @@ export const projects = [
     future:
       "Plans include integrating a payment gateway for premium event bookings, real-time chat between attendees and organizers, push notifications for upcoming events, and Google Calendar integration. More analytics tools for organizers and SEO-friendly public event pages will enhance visibility and usability.",
   },
-  {
-    id: "webja",
-    title: "WebJa",
-    category: "Online Voting System",
-    image: "https://i.ibb.co/VY2FGKM/dashboard.png",
-    link: "/projects/webja",
-    live: "#",
-    github: "#",
-    stack: "React, Firebase, Tailwind, Node.js",
-    description:
-      "WebJa is a secure, online voting system designed to provide transparent and tamper-proof voting experiences for organizations, institutions, or local communities. With clearly separated roles for admin, voter, and election commissioner, the platform ensures smooth management and tracking of elections. Real-time result visualization, vote locking mechanisms, and a clean UI help users participate and manage elections efficiently.",
-    challenges:
-      "One major challenge was implementing a secure vote submission system to prevent multiple voting from the same user. Designing the database schema to handle different roles and elections dynamically with Firebase’s NoSQL structure required careful planning. Another difficulty was ensuring that all data was encrypted or validated and stored securely to maintain trust. Balancing real-time updates with performance and ensuring that every UI interaction reflects backend changes quickly were also tricky.",
-    future:
-      "In the future, WebJa will include OTP or email verification for voter authentication, a more advanced admin dashboard with analytics and export options, and a PWA version for accessibility. Multi-language support, blockchain-based voting verification, and live result broadcasting with data visualizations are also planned to ensure scalability and trust at a higher level.",
-  },
+{
+  id: "boxably",
+  title: "BoxaBly",
+  category: "Entertainment Platform",
+  image: "https://i.ibb.co/hxxWkJns/laptop-1.png", // Replace with your own project screenshot or cover image
+  link: "/projects/boxably",
+  live: "https://boxably.web.app/",
+  github: "https://github.com/asapial/BoxaBly", // Add your GitHub repo link here
+  stack: "React, Firebase, Tailwind, Swiper, Lottie, AOS",
+  description:
+    "BoxaBly is a dynamic and modern entertainment web application that allows users to explore movies, shows, and exclusive originals through a clean and responsive interface. With features like user registration, profile management, animated avatar reactions, and content previews, BoxaBly delivers a premium OTT-like experience. Seamless UI transitions and a structured content layout make it intuitive and engaging for users to navigate through categories and details.",
+  challenges:
+    "One major challenge was achieving an OTT-style layout while keeping the UI lightweight and responsive across devices. Integrating animated reactions using Lottie and scroll-based transitions with AOS without affecting performance required careful optimization. Designing a user-friendly authentication flow with Firebase, including updateable profiles and error handling, also took fine-tuning. Ensuring content scaling, dark/light contrast balance, and interactive icon use without bloating the build size was another key challenge.",
+  future:
+    "In future updates, BoxaBly aims to include a video playback system, dark mode toggle, watchlist functionality, and a reviews/comments section. Plans are also in place for integrating TMDb or other APIs to fetch real movie/show data, enhancing the platform’s realism. Multi-user roles, personalized recommendations, and a PWA version are on the roadmap to make BoxaBly a fully immersive streaming-ready solution.",
+}
 ];

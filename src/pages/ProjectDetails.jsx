@@ -19,7 +19,7 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <div className="text-white text-center py-20">
+      <div className="text-white text-center py-30">
         <h2>Project Not Found</h2>
         <Link to="/" className="text-[#f9004d] underline">
           Go back

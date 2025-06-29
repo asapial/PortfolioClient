@@ -9,13 +9,28 @@ import { Footer } from 'rsuite';
 
 const Home = () => {
     return (
-        <div>
-            <Hero></Hero>
-            <ResumeSection></ResumeSection>
-            <MyProjects></MyProjects>
-            <AboutMe></AboutMe>
-            <ContactWithMeSection></ContactWithMeSection>
-        </div>
+<div>
+  <div id="home">
+    <Hero />
+  </div>
+  
+  <div id="resume">
+    <ResumeSection />
+  </div>
+
+  <div id="projects">
+    <MyProjects />
+  </div>
+
+  <div id="about">
+    <AboutMe />
+  </div>
+
+  <div id="contact">
+    <ContactWithMeSection />
+  </div>
+</div>
+
     );
 };
 

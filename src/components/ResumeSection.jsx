@@ -16,11 +16,11 @@ const ResumeSection = () => {
   const [activeTab, setActiveTab] = useState("Education");
 
   const designSkills = [
-    { name: "Photoshop", value: 100 },
-    { name: "Figma", value: 95 },
-    { name: "Adobe XD", value: 60 },
-    { name: "Adobe Illustrator", value: 70 },
-    { name: "Design", value: 90 },
+    { name: "Photoshop", value: 40 },
+    { name: "Figma", value: 40 },
+    // { name: "Adobe XD", value: 60 },
+    { name: "Adobe Illustrator", value: 80 },
+    { name: "Design", value: 70 },
   ];
 
   const devSkills = [
@@ -28,7 +28,7 @@ const ResumeSection = () => {
     { name: "CSS", value: 95 },
     { name: "JavaScript", value: 60 },
     { name: "Software", value: 70 },
-    { name: "Plugin", value: 90 },
+    // { name: "Plugin", value: 90 },
   ];
 
   const gradientBar = "bg-gradient-to-r from-purple-500 to-[#f9004d]";
